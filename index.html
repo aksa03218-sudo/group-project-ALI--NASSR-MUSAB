@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أكلات جازان الشعبية</title>
+    <!-- ربط خط تاجويل من قوقل -->
+    <link rel="preconnect" href="googleapis.com">
+    <link rel="preconnect" href="gstatic.com" crossorigin>
+    <link href="googleapis.com" rel="stylesheet">
+    <!-- ربط ملف الستايل -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +27,9 @@
         <div class="food-grid">
             <!-- كرت المغش -->
             <div class="card">
-                <img src="unsplash.com" alt="المغش الجيزاني" class="card-img">
+                <div class="card-img-wrapper">
+                    <img src="maghsh.jpg" alt="المغش الجيزاني" class="card-img">
+                </div>
                 <div class="card-content">
                     <h3>المغش</h3>
                     <p>لحم وخضار مطبوخ داخل برمة حجرية في التنور التقليدي.</p>
@@ -31,7 +38,9 @@
 
             <!-- كرت المرسة -->
             <div class="card">
-                <img src="unsplash.com" alt="المرسة الجيزانية" class="card-img">
+                <div class="card-img-wrapper">
+                    <img src="marsah.jpg" alt="المرسة الجيزانية" class="card-img">
+                </div>
                 <div class="card-content">
                     <h3>المرسة</h3>
                     <p>مزيج رائع من خبز البر المهروس مع الموز، السمن البلدي، والعسل الأبيض.</p>
