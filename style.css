@@ -16,7 +16,7 @@ body {
 
 /* Header */
 header {
-    background: url('unsplash.com') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200') no-repeat center center/cover;
     height: 400px;
     position: relative;
     color: white;
@@ -50,7 +50,7 @@ header h1 { font-size: 3rem; margin-bottom: 10px; }
 
 .food-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -61,25 +61,14 @@ header h1 { font-size: 3rem; margin-bottom: 10px; }
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
 }
 
 .card:hover { transform: translateY(-10px); }
 
-/* ضبط وعاء الصورة لمنع تمددها */
-.card-img-wrapper {
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-}
-
-/* تحسين عرض وحجم الصورة الفعلي */
 .card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* لملء المساحة بشكل متناسق دون تشويه */
-    display: block;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-content { padding: 20px; }
